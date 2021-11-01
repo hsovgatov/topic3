@@ -9,16 +9,37 @@
     <link rel="stylesheet" href="/position.css">
 
     <style>
+        :root {
+            --main-bg-color: coral;
+            --mainfont: Arial, Helvetica, sans-serif;
+            --mainpadding: 20px;
+        }
+
+        /* background-color: var(--main-bg-color); */
+
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
         .about {
-            width: 400px;
+            position: relative;
+            width: 100%;
             height: 900px;
-            background-color: crimson;
+            font-family: var(--mainfont);
+            background-color: var(--main-bg-color);
+            padding: var(--mainpadding);
+            z-index: 2;
         }
+
         .box-list {
             position: relative;
-            width: 700px;
+            top: 50px;
+            width: calc(100%/3);
+            margin-top: 100px;
             height: 900px;
+            z-index: 3;
             background-color: green;
 
         }
@@ -52,15 +73,15 @@
             background-color: cadetblue;
         } */
 
-        .box-4 {
+        /* .box-4 {
             position: sticky;
-            top: 30%; 
+            top: 10%; 
             left: 100%;
            width: 200px;
            height: 200px;
            background-color: brown;
          
-        }
+        } */
     </style>
 
 
@@ -81,9 +102,9 @@
             Box-3
         </div> -->
 
-        <div class="box-4">
+        <!-- <div class="box-4">
             Box-4
-        </div>
+        </div> -->
 
     </div>
 
